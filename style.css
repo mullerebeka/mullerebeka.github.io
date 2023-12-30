@@ -165,16 +165,14 @@ text-align: left;
       margin-bottom: 20px;
       text-align: top;
   }
-  footer {
+ footer {
       background-color: #1F3846;
       color: #C2C9CD;
       text-align: center;
       padding: 5px;
-      position: fixed;
       bottom: 0;
-      width: 96%;
+      width: 99.2%;
       height: fit-content;
-
   }
   #SendButton{
     background-color: #1F3846;
@@ -349,6 +347,20 @@ font-weight: bold;
   height: 1600px;
   width: 100%;
 }
+
+#PictureFooter
+{
+  background-color: #1F3846;
+  color: #C2C9CD;
+  text-align: center;
+  padding: 5px;
+  bottom: 0;
+  width: 99.2%;
+  height: fit-content;
+  position: fixed;
+  left: 0;
+}
+
 #PhotoCredit{
   margin-left: -150px;
   top: 0px;
