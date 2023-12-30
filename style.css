@@ -21,6 +21,7 @@ entry-page {
       padding: 0;
     background-color: #C2C9CD;
     font-size: 16x;
+    height: fit-content;
   }
   
   header {
@@ -58,7 +59,7 @@ entry-page {
     color: #fff;
 }
 #LanguageSelector {
-  margin-right: auto;;
+  margin-right: auto;
   order: 2;
   font-size: 12px;
   color: #C2C9CD;
@@ -165,7 +166,7 @@ text-align: left;
       margin-bottom: 20px;
       text-align: top;
   }
- footer {
+  footer {
       background-color: #1F3846;
       color: #C2C9CD;
       text-align: center;
@@ -174,6 +175,8 @@ text-align: left;
       width: 99.2%;
       height: fit-content;
   }
+
+
   #SendButton{
     background-color: #1F3846;
       color: #C2C9CD;
