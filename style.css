@@ -29,6 +29,7 @@ entry-page {
       padding: 5px;
       text-align: center;
       height: fit-content;
+      width: 99.2%;
 
   }
 #NevemÍrottan {
@@ -57,7 +58,7 @@ entry-page {
     color: #fff;
 }
 #LanguageSelector {
-  margin-right: 10px;
+  margin-right: auto;;
   order: 2;
   font-size: 12px;
   color: #C2C9CD;
