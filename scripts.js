@@ -101,3 +101,11 @@ $('.thumb').click((event) => {
         currentPhoto = numberIndex;
     };
 });
+
+
+/* for mobile view */
+$(document).ready(function () {
+    $('#mobile-menu').click(function () {
+        $('nav ul').toggleClass('show');
+    });
+});
