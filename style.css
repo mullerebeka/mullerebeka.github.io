@@ -8,8 +8,8 @@ entry-page {
     background-color: #1F3846;
   }
   #Showreel{
-    width: 260px;
-    height: 115px;
+    width: 360px;
+    height: 215px;
   }
   body {
       font-family: 'Raleway';
@@ -19,7 +19,7 @@ entry-page {
       margin-top: 0px;
       padding: 0;
     background-color: #C2C9CD;
-    font-size: 16px;
+    font-size: 1rem;
     height: fit-content;
   }
   
@@ -29,6 +29,7 @@ entry-page {
       text-align: center;
       height: fit-content;
       width: 100%;
+      font-size: 16px;
 
   }
 #NevemÍrottan {
@@ -68,12 +69,11 @@ entry-page {
     color: #fff;
 }
 #LanguageSelector {
-  margin-right: auto;
   order: 2;
   font-size: 12px;
   color: #C2C9CD;
-  margin-right: -1000px;
-  margin-left: auto;
+  margin-right: 10px;
+  text-align: end;
 }
 #LanguageSelector a {
   color: #C2C9CD;
@@ -83,6 +83,11 @@ entry-page {
   color: #fff;
 }
 
+@media (min-width:400px) { body {font-size: 16px;} } /* Mobile styles */
+@media (min-width:640px) { body {font-size:1rem;} } /* Tablet styles */
+@media (min-width:960px) { body {font-size:1.2rem;} } /* Desktop styles */
+@media (min-width:1100px) { body {font-size:1.5rem;} } /* Large Desktop styles */
+
   .hero {
       background-image: url('Welcome.png');
       background-size: cover;
@@ -90,7 +95,8 @@ entry-page {
       color: #fff;
       text-align: center;
       padding: 100px 50px;
-      height: 550px;
+      height: 700px;
+      width: auto;
       margin-right: 0px;
 
   }
@@ -100,31 +106,7 @@ entry-page {
 section{
   margin-right:20px;
 }
-/* Mobile styles */
-body {
-  font-size: 16px;
-}
 
-/* Tablet styles */
-@media (min-width: 640px) {
-  body {
-      font-size: 1rem;
-  }
-}
-
-/* Desktop styles */
-@media (min-width: 960px) {
-  body {
-      font-size: 1.2rem;
-  }
-}
-
-/* Large Desktop styles */
-@media (min-width: 1100px) {
-  body {
-      font-size: 0.9rem;
-  }
-}
 /*                            Index  part                              */
 #Welcome {
   font-family: 'Raleway';
@@ -152,20 +134,22 @@ body {
   margin-bottom: 20px;
   height: 1000px;
   font-family: 'Raleway';
+  font-size: 18px;
  }
  #Contact h2{
   font-weight: bold;
-  color: #2c2828;
+  color: #1F3846;
   text-transform: uppercase;
   font-family: 'Raleway';
-  border-bottom: 2px solid #1F3846
+  border-bottom: 2px solid #1F3846;
+  font-size: 24px;
 }
   #NameInputMező{
     background-color: #1F3846;
       color: #fff;
       text-align: left;
       bottom: 0;
-    height: 20px;
+    height: 30px;
       width: 400px;
     border-radius: 5px;
   text-align: left;
@@ -175,7 +159,7 @@ body {
       color: #fff;
       text-align: left;
       bottom: 0;
-    height: 20px;
+    height: 30px;
       width: 400px;
     border-radius: 5px;
   text-align: left;
@@ -185,7 +169,7 @@ body {
     color: #fff;
     text-align: left;
     bottom: 0;
-  height: 20px;
+  height: 30px;
     width: 400px;
   border-radius: 5px;
 text-align: left;
@@ -205,10 +189,12 @@ text-align: left;
       background-color: #1F3846;
       color: #C2C9CD;
       text-align: center;
-      padding: 5px;
+      padding: 5px; /* ez a másikba nem volt benne */
+      width: 100%;
       bottom: 0;
-      width: 99.2%;
-      height: fit-content;
+      left: 0;
+      z-index: 1000;
+      font-size: 16px;
   }
 
 
@@ -230,7 +216,8 @@ text-align: left;
     background-color: #C2C9CD;
     border-right: 2px solid #1F3846;
     font-family: 'Raleway';
-    margin-left: 15 px;
+    margin-left: 15px;
+    font-size: 16px;
 
 }
 #SecAboutMe {
@@ -241,6 +228,8 @@ text-align: left;
   margin-left: 350px;
   margin-top: -950px;
   flex-basis: calc(70% - 20px);
+  font-size: 16px;
+
 }
 #imageAboutMe {
   background-image: url("aboutme.png");
@@ -254,6 +243,14 @@ h4 {
     text-transform: uppercase;
 }
 
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
 aside h3,
 aside h4 {
     color: #1F3846;
@@ -261,12 +258,13 @@ aside h4 {
 
 aside h3 {
     border-bottom: 2px solid #1F3846;
+    font-size: 20px;
 ;
 }
 
 aside h4 {
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 section h3 {
@@ -338,6 +336,7 @@ font-family: Raleway;
 font-size: 16px;
 color:#1A4789;
 font-weight: bold;
+font-size: 16px;
 
   }
   #Showreel h2{
@@ -345,11 +344,13 @@ font-weight: bold;
     color: #2c2828;
     text-transform: uppercase;
     font-family: 'Raleway';
-    border-bottom: 2px solid #1F3846
+    border-bottom: 2px solid #1F3846;
+    font-size: 24px;
   }
   /*                           Credits part                            */
   .role-name{
     color:#1A4789;
+    font-size: 16px;
   }
   #experiences h2{
     font-weight: bold;
@@ -360,179 +361,123 @@ font-weight: bold;
   #experiences {
     height: 1000px;
   }
+.director-name {
+  font-weight: bold;
+  color: #1F3846;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-size: 16px;
+}
 
-  /*                          Pictures part                              */
+
+  /*                               PICTURE GALLERY                    */
+  * {
+    box-sizing: border-box;
+  }
   
-  #PictureHeader{  
-    background-color: #1F3846;
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    position:fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; 
-    height: fit-content;
-
-}
-
-#PictureBody {
-
-  margin-top: 0px;
-  display: flex;
-  align-items: center;
-  background-color: #C2C9CD;
-  height: 1600px;
-  width: 100%;
-}
-
-#PictureFooter
-{
-  background-color: #1F3846;
-  color: #C2C9CD;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: fit-content;
-  position: fixed;
-  left: 0;
-}
-
-#PhotoCredit{
-  margin-left: -150px;
-  top: 0px;
-}
-
-#PictureMain {
-  width: 70% ;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content:space-around;
-    margin-left: 250px;
-    margin-right: 20px;
-    margin-bottom: 0px;
-    margin-top: -500px;
-    padding-top: auto; /* height of the header */;
-    padding-bottom: fit-content; /* height of the footer */;
-}
-
-    div#picture {
-        width: 70%;
-        height: 1400px;
-        flex-basis: 80%;
-        box-shadow: 0 0 4px 4px #1F3846;
-        flex-grow: 4;
-        display: flex;
-        justify-content: space-between;
-        align-items: stretch;
-        overflow: hidden;
-    }
-
-    div.side {
-      background-color: #c2c9cd;
-      display: flex;
-      align-items: center;
+  /*    Teljes alakos kép mérete */
+  #expandedImg {
+    display: block;
+    margin: 0 auto;
+    position: relative; /* Make it the positioning context */
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; 
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -25px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: -50%;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* 1 columns side by side */
+  .column {
+    float: left;
+    width: 6.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+    /*                          Pictures part                              */
+    
+  
+  
+  #PhotoCredit{
+    margin-left: 0px;
+    top: 0px;
   }
 
-            button#leftButton, button#rightButton {
-                background-size: 100% 100%;
-                height: 40px;
-                width: 100px;
-                color:transparent;
-                background-color: transparent;
-                border: none;
-                outline: none;
-                padding: 0;
-                cursor: pointer;
-            }
-
-            button#leftButton {
-                background-image: url(./images/arrow.svg);
-            }
-
-            button#rightButton {
-                background-image: url(./images/arrow.svg);
-                transform: rotate(0.5turn);
-            }
-      
-
-            div#mainPict {
-              position: relative;
-              background-color: transparent;
-              color: transparent;
-          }
-
-        img#image {
-          width: 100%;
-          height: auto;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-    }
-
-
-
-    div#thumbs {
-        width: 100%;
-        height: 20%;
-        flex-basis: 20%;
-        flex-grow: 1;
-        background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -150px;
-        /* gap: 10px; */
-    }
-
-        div.thumb {
-            width: 60px;
-            height: 60px;
-            margin: 5px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: solid white 4px;
-            border-radius: 4px;
-            box-shadow: rgb(50, 50, 50) 0 4px 4px 0px;
-            cursor: pointer;
-            caret-color: transparent;
-            position: relative;
-        }
-
-        div.thumbActive {
-            width: 65px;
-            height: 65px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: solid rgb(50, 50, 50) 3px;
-            border-radius: 3px;
-            box-shadow: rgb(30, 30, 30) 0 5px 8px 0px;
-            cursor: pointer;
-            caret-color: transparent;
-            position: relative;
-        }
-
-        div.tooltip {
-            display: none;
-            position: relative;
-            bottom: -70px;
-            background-color: transparent;
-            opacity: 0.5;
-            border-radius: 3px;
-            color: black;
-            font-size: small;
-            font-style: italic;
-            font-weight: bolder;
-        }
-
-        div.thumb:hover .tooltip {
-            display: block;
-        }
+  #PhotoCredit h3 {
+    text-transform: uppercase;
+    color: #1F3846;
+    border-bottom: 2px solid #1F3846;
+    margin-right: 30px;
+    font-size: 24px;
+  }
 
 /*                                  MOBILE VIEW */
 .menu-toggle {
@@ -541,7 +486,7 @@ font-weight: bold;
   cursor: pointer;
   position: absolute;
   top: 15px;
-  right: 15px;
+  left: 40px;
 }
 
 .menu-toggle span {
@@ -556,7 +501,7 @@ font-weight: bold;
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -591,3 +536,36 @@ nav {
   }
 }
 
+
+/* MEGPRÓBÁLOM MEGJAVÍTANI AZ ABOUT ME-T MOBILON */
+
+@media (max-width: 768px) {
+  #SecAboutMe {
+    width: 60%; /* Make the main section take full width */
+    margin-left: 180px;
+    font-size: 14px;
+  }
+
+  aside {
+    width: 45%; /* Make the aside section take full width */
+    margin: 0; /* Remove any margin */
+    margin-left: 0px;
+    font-size: 14px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  #experiences {
+    width: 100%; /* Make the main section take full width */
+    margin-left: 0px;
+    font-size: 14px;
+    height: fit-content;
+  }
+  .director-name  {
+    text-align: end;
+    margin-right: 10px;
+  }
+
+}
