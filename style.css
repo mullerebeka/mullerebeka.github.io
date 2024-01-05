@@ -3,6 +3,7 @@ html { font-size:100%; }
 @media (min-width:640px) { body {font-size:1rem;} }
 @media (min-width:960px) { body {font-size:1.2rem;} }
 @media (min-width:1100px) { body {font-size:0.9rem;} }
+
 entry-page {
     font-family: 'Raleway';
     margin: 50;
@@ -28,7 +29,7 @@ entry-page {
   header {
       background-color: #1F3846;
       color: #fff;
-      padding: 5px;
+      padding: 10px;
       text-align: center;
       height: fit-content;
       width: 99.2%;
@@ -41,11 +42,22 @@ entry-page {
   
   nav ul {
       list-style: none;
+      display: flex; /* Use flexbox to arrange items in a row */
+      justify-content: center; /* Center the items horizontally */
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+
+
+
   }
   
   nav ul li {
       display: inline;
       margin-right: 20px;
+      display: block;
+      margin: 10px 0;
+      padding-right: 30px;
   }
   li{
     margin-left: 20px;
@@ -77,7 +89,8 @@ entry-page {
 
   .hero {
       background-image: url('Welcome.png');
-      background-size:100%;
+      background-size: cover;
+      background-repeat: no-repeat;
       color: #fff;
       text-align: center;
       padding: 100px 50px;
@@ -91,7 +104,32 @@ entry-page {
 section{
   margin-right:20px;
 }
-/* Index  part                              */
+/* Mobile styles */
+body {
+  font-size: 16px;
+}
+
+/* Tablet styles */
+@media (min-width: 640px) {
+  body {
+      font-size: 1rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 960px) {
+  body {
+      font-size: 1.2rem;
+  }
+}
+
+/* Large Desktop styles */
+@media (min-width: 1100px) {
+  body {
+      font-size: 0.9rem;
+  }
+}
+/*                            Index  part                              */
 #Welcome {
   font-family: 'Raleway';
   text-align: center;
@@ -112,7 +150,7 @@ section{
   color:#C2C9CD;
   border-bottom: 0;
 }
- /* Contact me part */
+ /*                               Contact me part */
  #Contact {
   margin-left: 20px;
   margin-bottom: 20px;
@@ -175,6 +213,7 @@ text-align: left;
       bottom: 0;
       width: 99.2%;
       height: fit-content;
+      position: fixed
   }
 
 
@@ -197,6 +236,7 @@ text-align: left;
     border-right: 2px solid #1F3846;
     font-family: 'Raleway';
     margin-left: 15 px;
+
 }
 #SecAboutMe {
   width: 900px;
@@ -205,6 +245,7 @@ text-align: left;
   color: #1F3846;
   margin-left: 350px;
   margin-top: -950px;
+  flex-basis: calc(70% - 20px);
 }
 #imageAboutMe {
   background-image: url("aboutme.png");
@@ -433,7 +474,10 @@ font-weight: bold;
           width: 100%;
           height: auto;
       }
-
+      img {
+        max-width: 100%;
+        height: auto;
+    }
 
 
 
