@@ -3,7 +3,7 @@ html { font-size:100%; }
 
 entry-page {
     font-family: 'Raleway';
-    margin: 50;
+    margin: 50px;
     padding: 0;
     background-color: #1F3846;
   }
@@ -19,7 +19,7 @@ entry-page {
       margin-top: 0px;
       padding: 0;
     background-color: #C2C9CD;
-    font-size: 16x;
+    font-size: 16px;
     height: fit-content;
   }
   
@@ -130,7 +130,7 @@ body {
   font-family: 'Raleway';
   text-align: center;
   width: 400px;
-  height: 200 px;
+  height: 200px;
   margin-right: 20px;
 }
 #Welcome h1 {
@@ -199,7 +199,7 @@ text-align: left;
       width: 400px;
       border-radius: 5px;
       margin-bottom: 20px;
-      text-align: top;
+      vertical-align: top;
   }
   footer {
       background-color: #1F3846;
@@ -377,9 +377,7 @@ font-weight: bold;
 }
 
 #PictureBody {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 0px;
+
   margin-top: 0px;
   display: flex;
   align-items: center;
@@ -416,7 +414,7 @@ font-weight: bold;
     margin-right: 20px;
     margin-bottom: 0px;
     margin-top: -500px;
-    padding-top: fit-content; /* height of the header */;
+    padding-top: auto; /* height of the header */;
     padding-bottom: fit-content; /* height of the footer */;
 }
 
