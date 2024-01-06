@@ -530,7 +530,7 @@ font-size: 16px;
     background-size: cover;
     background-repeat: no-repeat;
     text-align:center;
-    height: 100vw;
+    height: auto;
       width: 100vw;
      right: 40px;
 
@@ -538,7 +538,13 @@ font-size: 16px;
   
     footer {
         font-size: 14px;
+        width: 100vw;
     }
+    header {
+      font-size: 14px;
+      width: 100vw;
+  }
+
     #SubjectInputMező,
     #NameInputMező,
     #EmailInputMező,
