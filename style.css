@@ -89,9 +89,9 @@ entry-page {
 @media (min-width:1100px) { body {font-size:1.5rem;} } /* Large Desktop styles */
 
   .hero {
-      background-image: url('Welcome.png');
-      background-size: cover;
-      background-repeat: no-repeat;
+    background-image: url('Welcome.png');
+    background-size: cover;
+    background-repeat: no-repeat;
       color: #fff;
       text-align: center;
       padding: 100px 50px;
@@ -231,12 +231,7 @@ text-align: left;
   font-size: 16px;
 
 }
-#imageAboutMe {
-  background-image: url("aboutme.png");
-  background-size: 300px 316px;
-  height: 316px;
-  background-position: center;
-}
+
 h3,
 h4 {
     font-family: 'Raleway';
@@ -520,7 +515,7 @@ font-size: 16px;
 
   #SecAboutMe {
     width: 60%; /* Make the main section take full width */
-    margin-left: 180px;
+    margin-left: 200px;
     font-size: 14px;
   }
 
@@ -530,9 +525,27 @@ font-size: 16px;
     margin-left: 0px;
     font-size: 14px;
   }
+  .hero {
+    background-image: url('Welcome.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align:center;
+    height: 100vw;
+      width: 100vw;
+     right: 40px;
 
+    }
+  
+    footer {
+        font-size: 14px;
+    }
+    #SubjectInputMező,
+    #NameInputMező,
+    #EmailInputMező,
+    #SzovegInputMező {
+    width: 80vw;
 }
-
+  }
 
 @media (max-width: 768px) {
   #experiences {
