@@ -552,7 +552,24 @@ font-size: 16px;
     #SzovegInputMező {
     width: 80vw;
 }
+
+#Welcome h1 {
+  font-family: 'Raleway';
+  font-size: 27px;
+  color:#C2C9CD;
+  font-weight:bold;
+  text-transform: uppercase;
+  margin-left: -250px;
+}
+
+#Welcome h3 {
+  font-family: 'Raleway';
+  font-size: 16px;
+  color:#C2C9CD;
+  border-bottom: 0;
+  margin-left: -250px;
   }
+}
 
 @media (max-width: 768px) {
   #experiences {
